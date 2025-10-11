@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KLX230R Pre-Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2e8b57;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #246b45;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Pre-Order KLX230R</h2>
+    <form action="/submit-klx230r-order" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="location">Delivery Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="variant">KLX230R Variant:</label>
+      <select id="variant" name="variant">
+        <option value="standard">Standard</option>
+        <option value="lime-green">Lime Green Edition</option>
+        <option value="rally">Rally Edition</option>
+      </select>
+
+      <label for="payment">Preferred Payment Method:</label>
+      <select id="payment" name="payment">
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button type="submit">Submit Pre-Order</button>
+    </form>
+  </div>
+
+</body>
+</html>
